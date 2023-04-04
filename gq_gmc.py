@@ -29,7 +29,7 @@ if platform.system() == 'Windows':
     DEFAULT_PORT = 'COM99'
 else:
     DEFAULT_PORT = '/dev/gq-gmc'  # try '/dev/ttyUSB0' without udev rules
-DEFAULT_BAUD_RATE = 115200
+DEFAULT_BAUD_RATE = 57600
 DEFAULT_CPM_TO_SIEVERT = '1000,6.50'
 DEFAULT_OUTPUT_IN_CPM = False
 DEFAULT_NO_PARSE = False
@@ -138,7 +138,7 @@ def get_device_type():
         return ''
 
     m_device.write('<GETVER>>')
-    return m_device.read(14)
+    return m_device.read(15)
 
 
 def get_serial_number():
