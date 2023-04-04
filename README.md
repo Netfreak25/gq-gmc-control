@@ -1,5 +1,9 @@
 # gq-gmc-control
 
+
+## This is a quick fork from the original, i changed the reading of the firmware version as the last char was cut of. Luckyly this resultet also that the readings are now correct (90x hto high before). I've also changed the baud rate to the default value of my GMC-300S (RE 1.05)
+
+
 Control tool  for the GQ GMC  Geiger Counters.  This tool  provides a convenient
 cross platform (Linux,  Windows & OS X)  command line user interface  to most of
 the  device features  (which are  accessible  by USB).   Currently the  GMC-280,
